@@ -2,6 +2,10 @@ version: "2.1"
 services:
   web:
     build: .
-    image: nano
+    image: windows-container-101
     ports:
       - 80:80
+networks:
+  default:
+    external:
+      name: nat      
